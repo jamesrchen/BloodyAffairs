@@ -18,3 +18,5 @@ gradle/wrapper/gradle-wrapper.properties
 
 .idea
 *.iml
+
+.DS_Store

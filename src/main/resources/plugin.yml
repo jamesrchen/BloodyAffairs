@@ -1,0 +1,51 @@
+name: BloodyAffairs
+version: @version@
+main: ninja.jrc.bloodyaffairs.BloodyAffairs
+api-version: 1.13
+authors: [unknownguy2002]
+description: Wars and stuff
+website: jrc.ninja
+depend: [Vault, dynmap]
+
+commands:
+  bloodyaffairs:
+    description: Base command for Bloody Affairs
+    usage: |
+      /<command>
+      Example: /<command>
+    aliases: [ba, baffairs, bloodya]
+  claim:
+    description: Claim
+    usage: |
+      /<command> [toggle] <property>
+      Example: /<command>
+      Example: /<command> toggle
+    aliases: [c]
+  town:
+    description: Town command for Bloody Affairs
+    usage: |
+      /<command> [create | disband | list(ls/l) | claim(c) | invite | accept | kick | leave | promote | demote] <name>
+      Example: /<command> create JamesTown
+      Example: /<command> disband
+      Example: /<command> [claim | c]
+      Example: /<command> invite unknownguy2002
+      Example: /<command> accept
+      Example: /<command> leave
+      Example: /<command> kick killerinstinct
+    aliases: [t]
+  nation:
+    description: Nation command for Bloody Affairs
+    usage: |
+      /<command>
+      Example: /<command>
+    aliases: [t]
+  bloodyaffairsadmin:
+    description: Admin command for Bloody Affairs
+    usage: |
+      /<command>
+      Example: /<command>
+    aliases: [baa]
+
+permissions:
+  bloodyaffairs.admin:
+    description: Access to bloodyaffairs admin command
